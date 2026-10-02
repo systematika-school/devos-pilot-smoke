@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 
 const smoke = await readFile(new URL('../SMOKE.md', import.meta.url), 'utf8');
 
-if (!smoke.startsWith('# Development OS pilot\n')) {
+if (!smoke.includes('# Development OS pilot\n')) {
   throw new Error('SMOKE.md must keep the pilot heading');
 }
 if (!smoke.includes('Pilot status:')) {

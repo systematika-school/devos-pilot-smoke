@@ -1,3 +1,9 @@
+---
+status: active
+canonical: true
+doc_type: rules
+---
+
 # Pilot repository rules
 
 - This repository is disposable and non-production.
